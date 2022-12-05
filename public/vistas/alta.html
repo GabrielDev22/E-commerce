@@ -1,0 +1,68 @@
+<div data-aos="fade-right"
+     data-aos-offset="400"
+     data-aos-easing="ease-in-sine">
+<div class="container-alta">
+    <h1>Alta</h1>
+  
+    <form autocomplete="off" class="container-alta__formulario">
+      <!-- Campo de nombre -->
+      <label for="nombre"></label>
+      <input type="text" id="nombre" class="data-validation" placeholder="Nombre"/>
+      <div class="mensaje-validacion"></div>
+  
+      <!-- Campo de precio -->
+      <label for="precio"></label>
+      <input type="text" id="precio" class="data-validation" placeholder="Precio"/>
+      <div class="mensaje-validacion"></div>
+  
+      <!-- Campo de stock -->
+      <label for="stock"></label>
+      <input type="text" id="stock" class="data-validation" placeholder="Stock"/>
+      <div class="mensaje-validacion"></div>
+
+      <!-- Campo de marca -->
+      <label for="marca"></label>
+      <input type="text" id="marca" class="data-validation" placeholder="Marca"/>
+      <div class="mensaje-validacion"></div>
+  
+      <!-- Campo de categoria -->
+      <label for="categoria"></label>
+      <input type="text" id="categoria" class="data-validation" placeholder="Categoria"/>
+      <div class="mensaje-validacion"></div>
+  
+      <!-- Campo de detalles -->
+      <label for="detalles"></label>
+      <input type="text" id="detalles" class="data-validation" placeholder="Detalles"/>
+      <div class="mensaje-validacion"></div>
+  
+      <!-- Campo de foto -->
+     <!--  <label for="foto"></label>
+      <input type="text" id="foto" placeholder="Foto"/>
+      <div class="mensaje-validacion"></div> -->
+
+      <div id="drop-area">
+        <p>Subir imagen al servidor con <b>file dialog</b> o con <b>drag and drop</b> dentro del área punteada </p>
+        
+        <input type="file" id="foto" accept="image/*">
+        <label class="button" for="foto">File Dialog</label>
+        
+        <progress id="progress-bar" max="100" value="0"></progress>
+        
+        <div id="gallery"><img src="" alt=""></div>
+      </div>
+  
+      <!-- Campo de envio -->
+      <label for="envio">Envio</label>
+      <input type="checkbox" id="envio" class="data-validation"/>
+  
+      <button>Agregar</button>
+    </form>
+  
+    <hr />
+    <h2>Listado de productos</h2>
+    <hr />
+  
+    <div id="listado-productos"></div>
+  </div>
+</div>
+    

@@ -1,0 +1,126 @@
+.section-cards{
+    background-color: #f1f2f3;
+
+    &__header{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 500px;
+        background-image: url(/img/productos/Post\ de\ instagram\ empresa\ tecnologia\ celular\ futurista\ minimalista\ verde\ azul\ blanco\ negro.jpg);
+        border-radius: 10px;
+        box-shadow: 5px 10px 25px #01a5b1;
+    }    
+
+    &__header > h1 {
+        font-size: 70px;
+        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        color: #252525;
+        text-shadow: 2px 2px 5px #01a5b1;
+        text-align: center;
+        margin-top: 530px;
+    }
+
+    &__header > p {
+        font-size: 45px;
+        color: #252525;
+        text-shadow: 2px 2px 5px #01a5b1;
+        text-align: center;
+        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        margin-bottom: 80px;
+    }
+
+    @media (max-width: 768px){
+    
+        &__header{
+            height: 340px;
+            background-image: url(/img/productos/Post\ de\ instagram\ empresa\ tecnologia\ celular\ futurista\ minimalista\ verde\ azul\ blanco\ negro\ \(600\ ×\ 300\ px\).jpg);
+        }
+
+        &__header > h1{
+            font-size: 40px;
+            margin-top: 350px;
+        }
+
+        &__header > p {
+            font-size: 26px;
+        }
+    }
+}
+
+.contenedorPagos{
+    width: 900px;
+    border: 4px solid #01a5b1;
+    margin: 0 auto;
+    box-shadow: 25px 25px 50px #252525;
+
+    & > h2 {
+        color: #252525;
+        font-size: 30px;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        text-align: center;
+    }
+
+    &__contenido{
+        display: flex;
+        flex-direction: row;
+        margin: 30px;
+    }
+
+    &__imagenes{
+        width: 44px;
+        height: 50px;
+    }
+    
+    &__contenido > h3{
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        color: #252525;
+        font-size: 20px;
+        margin-right: 40px;
+    }
+
+    @media (max-width: 768px){
+
+        &{
+            width: 100%;
+        }
+
+            & > h2 {
+                font-size: 24px;
+                margin: 0 auto;
+            }
+        
+            &__contenido{
+                display: flex;
+                flex-direction: row;
+            }
+        
+            &__imagenes{
+                width: 30px;
+                height: 30px;
+            }
+            
+            &__contenido > h3{
+                font-size: 14px;
+                margin-right: 5px;
+            }
+        }
+    }
+
+.cards-container {
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+    background-color: #aabcd0;
+    border-radius: 40px;
+    box-shadow: 5px 10px 25px black;
+    margin-bottom: 100px;
+    margin-top: 500px;
+
+    @media (min-width: 1200px) {
+        &{
+            gap: 2em;
+        }
+    } 
+}

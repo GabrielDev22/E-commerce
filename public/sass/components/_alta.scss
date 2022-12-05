@@ -1,0 +1,188 @@
+.container-alta {
+    width: 100%;
+
+    &__formulario{
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+    }
+
+    .mensaje-validacion{
+        display: none;
+        border-radius: 5px;
+        margin: 2px 0 10px 0;
+        color: darkred;
+        background-color: gold;
+        border: 1px solid crimson;
+    }
+
+    label{
+        text-shadow: 1px 1px 1px #01a5b1;
+        font-size: 22px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    h1, h2 {
+        font-size: 40px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: 600;
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        color: #01a5b1;
+        text-shadow: 0px 2px 2px black;
+    }
+
+     input {
+        width: 450px;
+        height: 35px;
+        margin-bottom: 50px;
+        border-radius: 20px;
+        border: 2px solid #01a5b1;
+        box-shadow: 4px 4px 8px #01a5b1;
+        text-align: center;
+        text-shadow: 1px 1px black;
+        font-size: 22px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    
+    button {
+        width: 100px;
+        height: 30px;
+        border-radius: 10px;
+        border: 2px solid black;
+        background-color: #01a5b1;
+        color: white;
+        cursor: pointer;
+        justify-content: center;
+        margin-bottom: 20px;
+
+        &:hover {
+            background-color: #003592;
+        }
+    }
+
+
+    input[type="checkbox"] {
+        width: 15px;
+        height: 15px;
+        margin-top: 7px;
+    }
+
+    table,th, td {
+        font-size: 18px;
+        text-align: center;
+        border: 2px solid black;
+        border-collapse: collapse;
+        font-family:Arial, Helvetica, sans-serif;
+    }
+
+    table {
+        width: 90%;
+        margin-bottom: 100px;
+        margin-right: 50px;
+    }
+
+    #listado-productos {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 30px;
+    }
+}
+
+/* DROP AREA */
+#drop-area {
+    display: flex;
+    flex-direction: column;
+    border: 5px dashed #01a5b1;
+    border-radius: 20px;
+    width: 400px;
+    padding: 20px;
+}
+
+p{
+    font-size: 20px;
+    text-align: center;
+}
+
+.button {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 5px;
+    background: #01a5b1;
+    color: #fff;
+    border: 1px solid black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    cursor: pointer;
+    border-radius: 5px;
+    border-radius: 1px solid #01a5b1;
+    transition: 1s ease;
+    text-align: center;
+}
+
+.button:hover{
+    background-color: #003592;
+}
+
+#progress-bar{
+    width: 100%;
+    height: 30px;
+    margin-top: 10px;
+}
+
+#foto {
+    display: none;
+}
+
+#gallery img {
+    display: flex;
+    margin: 0 auto;
+    width: 150px;
+    margin-top: 10px;
+    vertical-align: middle;
+}
+
+#drop-area.highlight {
+    border-color: black;
+}
+
+
+@media (max-width: 768px) {
+
+    body{
+        width: 100%;
+    }
+
+    .container-alta{
+        width: 100px;
+
+        & > h1 {
+            margin-left: 200px;
+        }
+
+        &__formulario{
+            margin-left: 250px;
+        }
+
+        &__formulario > input {
+            width: 400px;
+        }
+
+        & > hr{
+            width: 800px;
+            border-bottom: 1px solid black;
+        }
+
+        & > h2{
+            width: 400px;
+            margin-left: 50px;
+        }
+    }
+
+    table,tr,th{
+        width: 50%;
+    }
+}

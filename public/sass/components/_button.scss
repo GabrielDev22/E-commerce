@@ -1,0 +1,89 @@
+.container-formulario  {
+    &__contenido > button {
+        font-weight: 700;
+        width: 20%;
+        border-radius: 10px;
+        height: 50px;
+        background-color:#01a5b1;;
+        margin-bottom: 50px;
+        margin-left: 10px;
+        color: #fff;
+        text-shadow: -1 1px black;
+    }
+
+    &__contenido > button:hover{
+       animation: pulsate 2s ease-in-out;
+       background-color: #003592;
+    }
+}
+
+.btn__enviarCarrito{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 85px;
+    height: 40px;
+    color: #fff;
+    font-size: 16px;
+    background-color: #4e00c2;
+    border-radius: 10px;
+
+    &:hover{
+        transition: 1.5s;
+        background-color: #01a5b1;
+    }
+}
+.agregarAlCarrito{
+    width: 85px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    background-color: #4e00c2;
+    color: white;
+    margin: 0 auto;
+    margin-top: 2px;
+
+    &:hover{
+        transition: 1.5s;
+        background-color: #01a5b1;
+    }
+}
+
+.btn__borrarCarrito{
+    width: 60px;
+    height: 35px;
+    font-size: 14px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    color: #ffffff;
+    background-color: #000;
+
+    &:hover{
+        transition: 1s;
+        background-color: red;
+    }
+}
+
+.btn-close{
+    width: 0;
+    height: 0;
+    margin-left: 94%;
+
+    @media (max-width: 768px) {
+
+        &{
+            margin-left: 300px;
+        }
+    }
+}
+
+@keyframes pulsate{
+    0%{
+        box-shadow: 
+        0 0 25px #5ddcff,
+        0 0 50px #4e00c2;
+    }
+}
