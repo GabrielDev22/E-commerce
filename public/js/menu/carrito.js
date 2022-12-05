@@ -40,6 +40,10 @@ function initCarrito() {
         } catch (error) {
             console.error(error)
         }
+        const cerrarCarrito = document.getElementById('btn-close')
+        cerrarCarrito.addEventListener('click', () => {
+            elemSectionCarrito.classList.remove('section-carrito--visible')
+        })
         
     })
 }

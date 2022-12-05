@@ -1,5 +1,7 @@
 {{#if carrito.length }}
-    <button class="btn__enviarCarrito" onclick="carritoController.enviarCarrito()">Enviar</button>
+    <div>
+        <button class="btn-close" id="btn-close"><img src="../img/productos/cerrar.svg"></button>
+    </div>
     <table>
         <tr>
             <th>Nombre</th>
@@ -17,7 +19,7 @@
             <td>{{precio}}</td>
             <td>{{marca}}</td>
             <td>
-                <img style="display:block; margin: 0 auto;" src="{{imagen}}" width="50" alt="{{nombre}}">
+                <img style="display:block; margin: 0 auto;" src="{{foto}}" width="50" alt="{{nombre}}">
             </td>
             <td>{{cantidad}}</td>
             
@@ -28,12 +30,17 @@
             {{/if}}
             
             <td>
-                <button onclick="carritoController.borrarProductoCarrito('{{id}}')">borrar</button>
+                <button class="btn__borrarCarrito" onclick="carritoController.borrarProductoCarrito('{{id}}')">borrar</button>
             </td>
         </tr>
          {{/each}}
     </table>
+    <button class="btn__enviarCarrito" onclick="carritoController.enviarCarrito()">Enviar</button>
 {{else}}
-    <h2>El carrito está vacío</h2>
+    <div>
+        <button class="btn-close" id="btn-close"><img src="../img/productos/cerrar.svg"></button>
+    </div>
+    <h2 class="carrito_vacio">El carrito está vacío</h2>
+    <img class="imagen_vacia-Carrito" src="../img/productos/carrito_vacio.svg">
 {{/if}}
 

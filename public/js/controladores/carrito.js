@@ -4,7 +4,6 @@ class CarritoController extends CarritoModel {
         super()
         
         try {
-            // console.log(JSON.parse(localStorage.getItem('carrito')))
             this.carrito = JSON.parse(localStorage.getItem('carrito')) || []
 
         } catch (error) {
@@ -18,7 +17,8 @@ class CarritoController extends CarritoModel {
     }
 
     elProductoEstaEnElCarrito(producto) {
-        return this.carrito.filter(prod => prod.id == producto.id).length
+        const productos = this.carrito.filter(prods =>prods.id == producto.id).length
+        return productos
     }
 
     obtenerProductoDeCarrito(producto) {
@@ -26,18 +26,18 @@ class CarritoController extends CarritoModel {
     }
 
     agregarAlCarrito(producto) {
-        console.log(producto)
+        const cantidadProductos = document.querySelector('.search-bar__numeroProducto')
 
-        if(!this.elProductoEstaEnElCarrito(producto)) {
-            producto.cantidad = 1
-            this.carrito.push(producto)
-        } else {
-            const productoDeCarrito = this.obtenerProductoDeCarrito(producto)
-            productoDeCarrito.cantidad++
-        }
+            if(!this.elProductoEstaEnElCarrito(producto)) {
+                producto.cantidad = 1
+                cantidadProductos.innerHTML = this.carrito.push(producto)
 
-        localStorage.setItem('carrito', JSON.stringify(this.carrito))
-
+            } else {
+                const productoDeCarrito = this.obtenerProductoDeCarrito(producto)
+                productoDeCarrito.cantidad++
+            }
+    
+            localStorage.setItem('carrito', JSON.stringify(this.carrito))
     }
 
     async borrarProductoCarrito(id) {

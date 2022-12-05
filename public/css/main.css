@@ -405,7 +405,7 @@ p {
   font-family: "Helvetica Neue", Helvetica, sans-serif;
 }
 
-.payment-form.darñ {
+.payment-form.dark {
   background-color: #f6f6f6;
 }
 
@@ -415,16 +415,21 @@ p {
 }
 
 .payment-form .block-heading {
-  padding-top: 40px;
+  padding-top: 20px;
   margin-bottom: 30px;
   text-align: center;
 }
 
 .payment-form .block-heading p {
+  font-size: 20px;
   text-align: center;
   max-width: 420px;
   margin: auto;
   color: RBBA(0, 0, 0, 0.45);
+}
+
+.payment-form .block-heading h2 {
+  font-size: 40px;
 }
 
 .payment-form .block-heading h1,
@@ -449,6 +454,23 @@ p {
   margin-bottom: 0.8rem;
   font-weight: bold;
   padding-bottom: 8px;
+}
+
+.payment-form .item {
+  font-size: 20px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  margin-top: 40px;
+  height: 60px;
+  border-bottom: 1px solid black;
+  border-top: 1px solid black;
+}
+
+.payment-form .total {
+  font-size: 30px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  height: 40px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid black;
 }
 
 .paymet-form .products {
@@ -488,6 +510,11 @@ p {
   text-transform: uppercase;
 }
 
+.payment-form #button-checkout {
+  display: flex;
+  margin: 0 auto;
+}
+
 .paymet-form button {
   margin-top: 0.6em;
   padding: 12px 0;
@@ -496,7 +523,7 @@ p {
   margin-bottom: 10px;
 }
 
-.payment-form .mercadoapgo-button {
+.payment-form .mercadoapago-button {
   width: 100%;
   padding: 8px 0;
 }
@@ -553,6 +580,19 @@ table, th, td {
 table {
   width: 90%;
   margin-bottom: 100px;
+}
+
+.carrito_vacio {
+  font-size: 40px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  text-align: center;
+  margin-bottom: 10px;
+  text-shadow: 1px 2px 3px #01a5b1;
+}
+
+.imagen_vacia-Carrito {
+  display: flex;
+  margin: 0 auto;
 }
 
 .active {
