@@ -58,12 +58,14 @@ class CarritoController extends CarritoModel {
         try {
             const elemSectionCarrito = document.getElementsByClassName('section-carrito')[0]
 
-            elemSectionCarrito.innerHTML = '<h2>Enviando carrito...</h2>'
+            elemSectionCarrito.innerHTML = `
+                <h2 style="text-align:center; margin-bottom:40px; font-size:35px; color:#01a5b1;">Enviando carrito...</h2>
+                <img style="display: flex; margin: 0 auto;" src="img/productos/carrito_vacio.svg">
+            `
+            
             const preference = await carritoService.guardarCarritoServicio(this.carrito)
             this.carrito = []
             localStorage.setItem('carrito', JSON.stringify(this.carrito))
-
-            elemSectionCarrito.innerHTML = '<h2>Enviando carrito <b>OK!</b></h2>'
 
             setTimeout( async () => {
                 elemSectionCarrito.classList.remove('section-carrito--visible')

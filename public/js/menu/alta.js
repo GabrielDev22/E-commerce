@@ -25,7 +25,6 @@ class FormularioAlta {
     this.button = document.querySelector("main form button")
 
     this.button.disabled = true
-    //console.log(this.inputs) #TODO Borrar console.log
     this.inputs.forEach((input, index) => {
       if (input.type != "checkbox") {
         input.addEventListener("input", () => {
