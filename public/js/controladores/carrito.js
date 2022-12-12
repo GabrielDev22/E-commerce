@@ -21,16 +21,18 @@ class CarritoController extends CarritoModel {
         return productos
     }
 
+
     obtenerProductoDeCarrito(producto) {
         return this.carrito.find(prod => prod.id == producto.id)
     }
 
     agregarAlCarrito(producto) {
-        const cantidadProductos = document.querySelector('.search-bar__numeroProducto')
+
+        const aumentoCarrito = document.querySelector('.search-bar__numeroProducto')
 
             if(!this.elProductoEstaEnElCarrito(producto)) {
                 producto.cantidad = 1
-                cantidadProductos.innerHTML = this.carrito.push(producto)
+                aumentoCarrito.innerHTML = this.carrito.push(producto)
 
             } else {
                 const productoDeCarrito = this.obtenerProductoDeCarrito(producto)
@@ -77,9 +79,7 @@ class CarritoController extends CarritoModel {
         } catch (error) {
             console.error(error)
         }
-
     }
-
 }
 
 const carritoController = new CarritoController()

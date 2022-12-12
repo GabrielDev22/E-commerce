@@ -1,3 +1,19 @@
 .active {
     font-weight: bold;
 }
+
+.sinProductosPublicados{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 30px;
+    text-align: center;
+    text-shadow: 1px 1px 1px #01a5b1;
+
+}
+
+.imagenSinProductosPublicados{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    margin: 0 auto;
+}

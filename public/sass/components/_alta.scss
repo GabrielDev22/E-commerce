@@ -10,11 +10,14 @@
 
     .mensaje-validacion{
         display: none;
+        font-size: 18px;
+        font-family: Arial, Helvetica, sans-serif;
         border-radius: 5px;
-        margin: 2px 0 10px 0;
-        color: darkred;
-        background-color: gold;
-        border: 1px solid crimson;
+        margin-bottom: 20px;
+        color: #fff;
+        text-shadow: 1px 1px black;
+        background-color: #01a5b1;
+        border: 1px solid black;
     }
 
     label{

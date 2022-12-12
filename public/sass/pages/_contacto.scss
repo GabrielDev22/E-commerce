@@ -53,11 +53,11 @@
     
 
     &__contenido{
-        box-shadow: 5px -5px 20px #2a3132;
+        box-shadow: 5px -5px 20px #131e2f;
         width: 70%;
         margin-top: 100px;
         margin-left: 100px;
-        border: 2px solid black;
+        border: 2px solid white;
         text-align: center;
     }
 
@@ -80,9 +80,15 @@
         width: 70%;
         height: 30px;
         border-radius: 5px;
+        border: 2px solid #131e2f;
+    }
+
+    &__contenido > input:hover{
+        background-color: #e8e6e6;
     }
 
     &__contenido > textarea {
+        border: 2px solid #131e2f;
         margin: 30px;
         width: 70%;
         height: 100px;
