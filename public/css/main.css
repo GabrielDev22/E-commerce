@@ -227,7 +227,7 @@ p {
   background-color: #4e00c2;
   color: white;
   margin: 0 auto;
-  margin-top: 2px;
+  margin-bottom: 5px;
 }
 .agregarAlCarrito:hover {
   transition: 1.5s;
@@ -275,7 +275,7 @@ p {
   margin-top: 50px;
   margin-bottom: 100px;
   border-radius: 20px;
-  height: 480px;
+  height: 100%;
   overflow: hidden;
   border: 1px solid white;
   box-shadow: 2px 5px 8px #01a5b1;
@@ -301,7 +301,7 @@ p {
   background-color: #ffffff;
 }
 .card__image-container {
-  height: 200px;
+  height: 250px;
   overflow: hidden;
   border-radius: 20px;
 }
@@ -633,6 +633,7 @@ HEADER .main-header {
 ***********************************/
 .nav-bar {
   background-color: #131e2f;
+  order: 2;
 }
 .nav-bar__nav-list {
   width: 100%;
@@ -707,6 +708,8 @@ HEADER .main-header {
   border-radius: 20px;
   box-shadow: -1px 2px 2px #01a5b1;
   font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 16px;
+  text-align: center;
 }
 .search-bar__form-search:hover {
   background-color: #AABCD0;

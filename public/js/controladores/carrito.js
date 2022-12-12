@@ -60,7 +60,7 @@ class CarritoController extends CarritoModel {
 
             elemSectionCarrito.innerHTML = `
                 <h2 style="text-align:center; margin-bottom:40px; font-size:35px; color:#01a5b1;">Enviando carrito...</h2>
-                <img style="display: flex; margin: 0 auto;" src="img/productos/carrito_vacio.svg">
+                <img style="display: flex; margin: 0 auto;" src="img/productos/enviandoCarrito.svg">
             `
             
             const preference = await carritoService.guardarCarritoServicio(this.carrito)

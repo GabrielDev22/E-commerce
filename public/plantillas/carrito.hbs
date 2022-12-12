@@ -19,9 +19,9 @@
             <td>{{precio}}</td>
             <td>{{marca}}</td>
             <td>
-                <img style="display:block; margin: 0 auto;" src="{{foto}}" width="50" alt="{{nombre}}">
+                <img style="display:block; margin: 0 auto;" src="{{foto}}" width="50" height="50" alt="{{nombre}}">
             </td>
-            <td>{{cantidad}}</td>
+            <td onclick="aumentoCantidad('{{id}}')">{{cantidad}}</td>
             
             {{#if envio}}
                 <td>Si</td>
