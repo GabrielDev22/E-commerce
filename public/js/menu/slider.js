@@ -1,9 +1,9 @@
-let slider = document.querySelector('.section-cards__contenedor')
-let sliderIndividual = document.querySelectorAll('.section-cards__slider')
+let slider = document.querySelector('.section-slider__contenedor')
+let sliderIndividual = document.querySelectorAll('.section-slider__slider')
 let contador = 1;
 let width = sliderIndividual[0].clientWidth;
 console.log(width)
-let intervalo = 7000;
+let intervalo = 5000;
 
 window.addEventListener('resize', function(){
     width = sliderIndividual[0].clientWidth;
@@ -15,7 +15,7 @@ setInterval(function(){
 
 function slides(){
     slider.style.transform = "translate("+(-width*contador)+"px)";
-    slider.style.transition = "transform .8s";
+    slider.style.transition = "transform .5s";
     contador++;
 
     if(contador == sliderIndividual.length){
@@ -23,6 +23,6 @@ function slides(){
             slider.style.transform = "translate(0px)";
             slider.style.transition = "transform 0s";
             contador=1;
-        },7000)
+        },5000)
     }
 }
