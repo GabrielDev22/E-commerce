@@ -651,7 +651,6 @@ HEADER .main-header {
 ***********************************/
 .nav-bar {
   background-color: #131e2f;
-  order: 2;
 }
 .nav-bar__nav-list {
   display: flex;
@@ -665,8 +664,7 @@ HEADER .main-header {
   }
 }
 .nav-bar__nav-item {
-  margin: 5px;
-  padding: 15px;
+  padding: 5px;
   text-align: center;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-weight: 500;
@@ -688,7 +686,6 @@ HEADER .main-header {
     flex-wrap: wrap;
     display: none;
     flex-direction: row;
-    order: 3;
   }
 }
 
@@ -704,6 +701,7 @@ HEADER .main-header {
 }
 .search-bar__logo-container {
   width: 100px;
+  border: 1px solid white;
   background-image: url(/img/productos/logo\ 2.svg);
   background-repeat: no-repeat;
   background-color: #131e2f;
@@ -767,16 +765,15 @@ HEADER .main-header {
   display: none;
   flex: 0 0 3em;
   position: relative;
-  cursor: pointer;
   background-color: #131e2f;
 }
 .menu-toggle__label {
-  display: block;
+  display: flex;
   height: 100%;
   background-color: #131e2f;
 }
 .menu-toggle__top-bread, .menu-toggle__meat, .menu-toggle__bottom-bread {
-  display: block;
+  display: flex;
   height: 0.2em;
   position: absolute;
   left: 0.5em;
@@ -795,7 +792,7 @@ HEADER .main-header {
 }
 @media (max-width: 768px) {
   .menu-toggle {
-    display: block;
+    display: flex;
   }
 }
 
@@ -1130,10 +1127,47 @@ HEADER .main-header {
   }
 }
 
+.titulo {
+  font-size: 45px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  color: #252525;
+  text-shadow: 2px 2px 5px #01a5b1;
+  text-align: center;
+}
+
+.contenedor-icons {
+  width: 100%;
+  height: 250px;
+  margin-bottom: 100px;
+  display: flex;
+}
+.contenedor-icons__contenido {
+  width: 100%;
+  height: 60px;
+  margin-top: 20px;
+}
+.contenedor-icons__informacion {
+  width: 100%;
+  border: 2px solid black;
+  border-radius: 50%;
+  transition: all 0.5s ease-out;
+}
+.contenedor-icons__informacion:hover {
+  background-color: #394254;
+  transform: translate(10px, 10%);
+  border: 5px solid #01a5b1;
+}
+.contenedor-icons__contenido {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+  color: black;
+}
+
 .contenedorPagos {
   width: 900px;
   border: 4px solid #01a5b1;
   margin: 0 auto;
+  margin-bottom: 100px;
   box-shadow: 25px 25px 50px #252525;
 }
 .contenedorPagos > h2 {

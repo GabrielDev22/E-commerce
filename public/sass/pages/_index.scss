@@ -33,11 +33,51 @@
         }
     }
 }
+.titulo{
+    font-size: 45px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #252525;
+    text-shadow: 2px 2px 5px #01a5b1;
+    text-align: center;
+}
+
+.contenedor-icons{
+    width: 100%;
+    height: 250px;
+    margin-bottom: 100px;
+    display: flex;
+
+    &__contenido{
+        width: 100%;
+        height: 60px;
+        margin-top: 20px;
+    }
+
+    &__informacion{
+        width: 100%;
+        border: 2px solid black;
+        border-radius: 50%;
+        transition: all 0.5s ease-out;
+    }
+
+    &__informacion:hover{
+        background-color:#394254;
+        transform: translate(10px, 10%);
+        border: 5px solid #01a5b1;
+    }
+
+    &__contenido{
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        text-align: center;
+        color: black;
+    }  
+}
 
 .contenedorPagos{
     width: 900px;
     border: 4px solid #01a5b1;
     margin: 0 auto;
+    margin-bottom: 100px;
     box-shadow: 25px 25px 50px #252525;
 
     & > h2 {

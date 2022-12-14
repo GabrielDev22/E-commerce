@@ -10,7 +10,6 @@ async function renderTablaCarrito(carrito) {
         const plantillaHbs = await respuesta.text()
         const template = Handlebars.compile(plantillaHbs)
         const html = template({ carrito } )
-        //console.log(html)
 
         elemSectionCarrito.innerHTML = html
         elemSectionCarrito.classList.add('section-carrito--visible')        
