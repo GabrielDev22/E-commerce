@@ -78,7 +78,7 @@ $color-Card: #ffffff;
         }
     }
 
-    @media (min-width: 426px) and (max-width: 768px) {
+    @media (max-width: 768px) {
         & {
             min-width: 400px;
             max-width: 500px;
