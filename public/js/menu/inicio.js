@@ -4,7 +4,6 @@ async function renderPlantillaListado(listado) {
     let sliderIndividual = document.querySelectorAll('.section-slider__slider')
     let contador = 1;
     let width = sliderIndividual[0].clientWidth;
-    console.log(width)
     let intervalo = 5000;
     
     window.addEventListener('resize', function(){
@@ -31,7 +30,6 @@ async function renderPlantillaListado(listado) {
 
     (() => {
         const titleQuestions = [...document.querySelectorAll('.questions__title')];
-        console.log(titleQuestions)
     
         titleQuestions.forEach(question =>{
             question.addEventListener('click', ()=>{
