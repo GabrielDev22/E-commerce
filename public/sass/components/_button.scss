@@ -35,7 +35,7 @@
     }
 }
 .agregarAlCarrito{
-    width: 85px;
+    width: 120px;
     height: 40px;
     display: flex;
     justify-content: center;
@@ -45,6 +45,7 @@
     color: white;
     margin: 0 auto;
     margin-bottom: 5px;
+    font-size: 16px;
 
     &:hover{
         transition: 1.5s;

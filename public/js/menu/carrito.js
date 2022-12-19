@@ -1,7 +1,6 @@
 let mostrarCarrito = false
 
 async function renderTablaCarrito(carrito) {
-    //console.log(carrito)
     
     try {
 

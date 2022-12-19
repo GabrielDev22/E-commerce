@@ -221,7 +221,7 @@ p {
 }
 
 .agregarAlCarrito {
-  width: 85px;
+  width: 120px;
   height: 40px;
   display: flex;
   justify-content: center;
@@ -231,6 +231,7 @@ p {
   color: white;
   margin: 0 auto;
   margin-bottom: 5px;
+  font-size: 16px;
 }
 .agregarAlCarrito:hover {
   transition: 1.5s;
@@ -701,8 +702,7 @@ HEADER .main-header {
 }
 .search-bar__logo-container {
   width: 100px;
-  border: 1px solid white;
-  background-image: url(/img/productos/logo\ 2.svg);
+  background-image: url(../../img/productos/Logo.png);
   background-repeat: no-repeat;
   background-color: #131e2f;
 }
